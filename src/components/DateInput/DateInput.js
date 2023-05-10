@@ -1,4 +1,4 @@
-const DateInput = ({ label, type, id, placeholder, min, max }) => {
+const DateInput = ({ label, type, id, placeholder }) => {
   return (
     <>
       <label htmlFor={id} className="font-semibold capitalize">
@@ -8,8 +8,8 @@ const DateInput = ({ label, type, id, placeholder, min, max }) => {
         id={id}
         type={type}
         placeholder={placeholder}
-        min={min}
-        max={max}
+        inputmode="numeric"
+        pattern="[0-9]*"
       />
     </>
   );
